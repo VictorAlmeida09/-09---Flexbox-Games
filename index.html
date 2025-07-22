@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="Victor Lucas Almeida Pinheiro" content="width=device-width, initial-scale=1.0"/>
+  <title>Flexbox Zombies e Flexbox Adventure</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    h1, h2 {
+      color: #0077cc;
+    }
+    img {
+      max-width: 50%;
+      border: 2px solid #ccc;
+      margin-bottom: 20px;
+    }
+    ul {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Relatório da Atividade Flexbox</h1>
+
+  <h2>👤 Victor Lucas Almeida Pinheiro</h2>
+  <p>Victor Lucas Almeida Pinheiro</p>
+
+  <h2>🎮 Jogos Escolhidos</h2>
+  <ul>
+    <li><strong>Flexbox Froggy</strong> - <a href="https://flexboxfroggy.com/" target="_blank">https://flexboxfroggy.com/</a><br>
+      <em>Justificativa:</em> Escolhi este jogo por ter um sapo.
+    </li>
+    <li><strong>Flexbox Adventure</strong> - <a href="https://codingfantasy.com/games/flexboxadventure/play" target="_blank">https://codingfantasy.com/games/flexboxadventure/play</a><br>
+      <em>Justificativa:</em> Achei interessante por causa do cavalheiro, pois eu também sou.
+    </li>
+  </ul>
+
+  <h2>📸 Registro de Níveis</h2>
+
+  <h3>🟢 Flexbox Froggy</h3>
+  <p><strong>Nível 2:</strong> Tive dificuldade para entender o jogo.</p>
+  <img src="imgs/printdonivel2.png" alt="Flexbox Froggy - Nível 2" />
+
+  <p><strong>Nível 3:</strong> Fiquei confuso com esse nível porque os valores do 'justify-content' são parecidos.</p>
+  <img src="imgs/printdonivel3.png" alt="Flexbox Froggy - Nível 3" />
+
+  <p><strong>Nível 6:</strong> Tive dificuldade porque não lembrava que precisava usar tanto 'justify-content' quanto 'align-items' pra centralizar o sapo no meio. Achei que só uma das propriedades bastava.</p>
+  <img src="imgs/printdonivel6.png" alt="Flexbox Froggy - Nível 6" />
+
+  <h3>🟡 Flexbox Adventure</h3>
+  <p><strong>Level 1:</strong> Dificuldade para compreender o game.</p>
+  <img src="imgs/printdolevel1.png" alt="Flexbox Adventure - Level 1" />
+
+  <p><strong>Level 3:</strong> Tive dificuldade porque não entendi exatamente onde o alimento estava, então fiquei em dúvida sobre qual valor de justify-content usar.</p>
+  <img src="imgs/printdolevel3.png" alt="Flexbox Adventure - Level 3" />
+
+  <p><strong>Level 4:</strong> Tive dificuldade porque usei 'space-around' achando que os heróis iam ficar no lugar certo, mas acabou deixando espaço demais e eles não ficaram exatamente em cima da comida.</p>
+  <img src="imgs/printdolevel4.png" alt="Flexbox Adventure - Fase 4" />
+
+  <h2>💭 Reflexão e Aplicação Prática</h2>
+
+  <h3>Propriedades CSS Utilizadas:</h3>
+  <ul>
+    <li><code>display: flex</code> – Ativa o Flexbox no container.</li>
+    <li><code>justify-content</code> – Alinha os itens no eixo principal (horizontal por padrão).</li>
+    <li><code>align-items</code> – Alinha os itens no eixo cruzado (vertical por padrão).</li>
+    <li><code>align-self</code> – Permite que um item se alinhe diferente dos outros.</li>
+    <li><code>flex-direction</code> – Muda a direção do eixo principal (row, column, etc).</li>
+    <li><code>order</code> – Altera a ordem de exibição dos itens.</li>
+    <li><code>flex-wrap</code> – Permite que os itens quebrem linha.</li>
+    <li><code>gap</code> – Define o espaçamento entre os itens.</li>
+  </ul>
+
+  <h3>Aplicação Prática (exemplo de caso real):</h3>
+  <p>
+    Em um layout de cards responsivos, como por exemplo uma galeria de produtos:
+  </p>
+  <ul>
+    <li>Usaria `display: flex` no container dos cards.</li>
+    <li>Adicionaria `flex-wrap: wrap` para que os cards se ajustem à largura da tela.</li>
+    <li>Aplicaria `justify-content: space-around` para espaçar os cards.</li>
+    <li>Com `gap: 20px` facilitaria o espaçamento interno entre eles.</li>
+  </ul>
+
+</body>
+</html>
